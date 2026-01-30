@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LearnHub - Современная образовательная платформа для изучения программирования и digital-навыков">
+    <title>LearnHub - Образовательная платформа</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="index.html" class="logo">LearnHub</a>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link active">Главная</a>
+            <a href="courses.html" class="nav-link">Курсы</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="#" class="nav-link">Блог</a>
+            <a href="#" class="nav-link">Контакты</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="login.html" class="btn btn-ghost">Вход</a>
+            <a href="register.html" class="btn btn-primary">Регистрация</a>
+        </div>
+
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="animate-fade-in">
+                    <h1>Учись у лучших.<br>Стань профессионалом.</h1>
+                    <p class="text-large" style="margin: var(--spacing-md) 0;">
+                        Более 500+ курсов по программированию, дизайну и digital-маркетингу.
+                        Начни свой путь к успешной карьере уже сегодня!
+                    </p>
+                    <div class="flex gap-md" style="margin-top: var(--spacing-xl); flex-wrap: wrap;">
+                        <a href="courses.html" class="btn btn-primary btn-lg">Начать обучение</a>
+                        <a href="about.html" class="btn btn-outline btn-lg">Узнать больше</a>
+                    </div>
+                </div>
+
+                <div class="animate-fade-in animate-delay-2">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop"
+                         alt="Студенты обучаются"
+                         style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-count="12500">0</div>
+                    <div class="stat-label">Активных студентов</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-count="540">0</div>
+                    <div class="stat-label">Онлайн курсов</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-label">Процент успеха</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">Экспертов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Популярные курсы</h2>
+                <p>Выбирай из самых востребованных направлений</p>
+            </div>
+
+            <div class="courses-grid">
+                <article class="course-card animate-on-scroll" data-category="development">
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=250&fit=crop"
+                         alt="Веб-разработка"
+                         class="course-card-image">
+                    <div class="course-card-body">
+                        <span class="course-category">Разработка</span>
+                        <h3 class="course-title">Полный курс по Web Development</h3>
+                        <p class="course-description">
+                            Изучите HTML, CSS, JavaScript и современные фреймворки.
+                            От основ до продвинутого уровня.
+                        </p>
+                        <div class="course-footer">
+                            <div class="course-meta">
+                                <span>📚 24 модуля</span>
+                                <span>⏱️ 80 часов</span>
+                            </div>
+                            <div class="course-price">15,990₽</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card animate-on-scroll" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop"
+                         alt="UI/UX Дизайн"
+                         class="course-card-image">
+                    <div class="course-card-body">
+                        <span class="course-category">Дизайн</span>
+                        <h3 class="course-title">UI/UX Дизайн с нуля</h3>
+                        <p class="course-description">
+                            Создавайте красивые и функциональные интерфейсы.
+                            Работа с Figma, Adobe XD и дизайн-системами.
+                        </p>
+                        <div class="course-footer">
+                            <div class="course-meta">
+                                <span>📚 18 модулей</span>
+                                <span>⏱️ 60 часов</span>
+                            </div>
+                            <div class="course-price">12,990₽</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card animate-on-scroll" data-category="data">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop"
+                         alt="Data Science"
+                         class="course-card-image">
+                    <div class="course-card-body">
+                        <span class="course-category">Data Science</span>
+                        <h3 class="course-title">Python для анализа данных</h3>
+                        <p class="course-description">
+                            Станьте специалистом по Data Science.
+                            Python, pandas, машинное обучение и визуализация.
+                        </p>
+                        <div class="course-footer">
+                            <div class="course-meta">
+                                <span>📚 30 модулей</span>
+                                <span>⏱️ 100 часов</span>
+                            </div>
+                            <div class="course-price">18,990₽</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center" style="margin-top: var(--spacing-xl);">
+                <a href="courses.html" class="btn btn-outline btn-lg">Все курсы →</a>
+            </div>
+        </div>
+    </section>
+    <section class="section" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Почему LearnHub?</h2>
+                <p>Мы предлагаем лучшие условия для вашего обучения</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Экспертные преподаватели</h3>
+                    <p>Учитесь у практикующих специалистов с опытом работы в крупных компаниях</p>
+                </div>
+
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Гибкий график</h3>
+                    <p>Занимайтесь в удобное время. Все материалы доступны 24/7</p>
+                </div>
+
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Сертификаты</h3>
+                    <p>Получайте официальные сертификаты после завершения курсов</p>
+                </div>
+
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">💼</div>
+                    <h3>Помощь в трудоустройстве</h3>
+                    <p>Помогаем с составлением резюме и подготовкой к собеседованиям</p>
+                </div>
+
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">👥</div>
+                    <h3>Комьюнити</h3>
+                    <p>Общайтесь с единомышленниками и работайте над проектами вместе</p>
+                </div>
+
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Практика</h3>
+                    <p>Реальные проекты и задачи для закрепления навыков</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div style="background: var(--gradient-primary); padding: var(--spacing-xxl); border-radius: var(--radius-xl); text-align: center;">
+                <h2 style="color: white; margin-bottom: var(--spacing-md);">
+                    Готовы начать обучение?
+                </h2>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: var(--spacing-xl);">
+                    Присоединяйтесь к тысячам студентов, которые уже меняют свою жизнь
+                </p>
+                <a href="register.html" class="btn btn-secondary btn-lg">Создать аккаунт бесплатно</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>О платформе</h4>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.6;">
+                    LearnHub - современная образовательная платформа для изучения
+                    программирования, дизайна и digital-навыков.
+                </p>
+                <div class="social-links" style="margin-top: var(--spacing-md);">
+                    <a href="#" class="social-icon" aria-label="VK">VK</a>
+                    <a href="#" class="social-icon" aria-label="Telegram">TG</a>
+                    <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+                    <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Курсы</h4>
+                <a href="#" class="footer-link">Веб-разработка</a>
+                <a href="#" class="footer-link">Мобильная разработка</a>
+                <a href="#" class="footer-link">Data Science</a>
+                <a href="#" class="footer-link">UI/UX Дизайн</a>
+                <a href="#" class="footer-link">Digital Marketing</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Компания</h4>
+                <a href="about.html" class="footer-link">О нас</a>
+                <a href="#" class="footer-link">Преподаватели</a>
+                <a href="#" class="footer-link">Карьера</a>
+                <a href="#" class="footer-link">Блог</a>
+                <a href="#" class="footer-link">Партнеры</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Поддержка</h4>
+                <a href="#" class="footer-link">Помощь</a>
+                <a href="#" class="footer-link">FAQ</a>
+                <a href="#" class="footer-link">Контакты</a>
+                <a href="#" class="footer-link">Политика конфиденциальности</a>
+                <a href="#" class="footer-link">Условия использования</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                © 2026 LearnHub. Все права защищены.
+            </p>
+            <div style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                Создано с ❤️ для студентов
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
